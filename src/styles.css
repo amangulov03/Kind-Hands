@@ -85,9 +85,9 @@ form textarea,
 form button {
     padding: 10px;
     margin-bottom: 15px;
+    border-radius: 30px;
     border: 1px solid #ccc;
     transition: border-color 0.3s;
-    border-radius: 30px;
 }
 
 form input:focus,
