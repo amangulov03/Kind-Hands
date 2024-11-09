@@ -33,6 +33,8 @@ function VolunteerForm() {
   };
 
   return (
+    <div className="backforms">
+
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="volunteer-name" className="form-label">Ваше имя</label>
@@ -52,6 +54,7 @@ function VolunteerForm() {
       </div>
       <button type="submit" className="btn btn-primary">Записаться на мероприятие</button>
     </form>
+    </div>
   );
 }
 

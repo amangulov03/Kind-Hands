@@ -5,8 +5,10 @@ import EventForm from '../components/EventForm';
 function OrganizationPage() {
   return (
     <div>
-      <h1>Регистрация мероприятия</h1>
+      <div className="container">
+      <h1 className='q'>Регистрация мероприятия</h1>
       <EventForm />
+      </div>
     </div>
   );
 }

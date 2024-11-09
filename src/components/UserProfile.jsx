@@ -29,7 +29,7 @@ function UserProfile() {
   };
 
   return (
-    <div>
+    <div className="profil">
       <h2>Личный кабинет</h2>
       {user ? (
         <div>

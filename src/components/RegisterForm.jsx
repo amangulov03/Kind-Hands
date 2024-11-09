@@ -27,6 +27,8 @@ function RegisterForm() {
   };
 
   return (
+    <div className="backforms">
+
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="register-name" className="form-label">Имя</label>
@@ -42,6 +44,7 @@ function RegisterForm() {
       </div>
       <button type="submit" className="btn btn-primary">Зарегистрироваться</button>
     </form>
+    </div>
   );
 }
 

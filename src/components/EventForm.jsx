@@ -26,6 +26,8 @@ function EventForm() {
   };
 
   return (
+    <div className="backforms">
+
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="event-name" className="form-label">Название мероприятия</label>
@@ -45,6 +47,7 @@ function EventForm() {
       </div>
       <button type="submit" className="btn btn-primary">Создать мероприятие</button>
     </form>
+    </div>
   );
 }
 

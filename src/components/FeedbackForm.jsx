@@ -15,6 +15,8 @@ function FeedbackForm() {
   };
 
   return (
+    <div className="backforms">
+
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="feedback-name" className="form-label">Ваше имя</label>
@@ -30,6 +32,7 @@ function FeedbackForm() {
       </div>
       <button type="submit" className="btn btn-primary">Отправить</button>
     </form>
+    </div>
   );
 }
 

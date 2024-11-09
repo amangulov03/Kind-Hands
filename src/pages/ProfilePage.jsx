@@ -5,8 +5,10 @@ import UserProfile from '../components/UserProfile';
 function ProfilePage() {
   return (
     <div>
-      <h1>Профиль пользователя</h1>
+      <div className="container">
+      <h1 className='pr' >Профиль пользователя</h1>
       <UserProfile />
+      </div>
     </div>
   );
 }

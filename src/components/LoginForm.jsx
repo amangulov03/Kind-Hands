@@ -21,7 +21,8 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="backforms">
+      <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="login-email" className="form-label">Email</label>
         <input type="email" id="login-email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} required />
@@ -35,6 +36,7 @@ function LoginForm() {
         <Link to="/register" className="btn btn-link">Зарегистрироваться</Link>
       </div>
     </form>
+    </div>
   );
 }
 

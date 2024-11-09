@@ -10,6 +10,10 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Navbar from './components/Navbar';
 import EditEventForm from './components/EditEventForm';
+import EventList from "./components/EventList";
+import EventForm from './components/EventForm.jsx';
+import VolunteerForm from './components/VolunteerForm.jsx';
+
 
 
 function App() {
@@ -25,6 +29,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/edit-event/:id" element={<EditEventForm />} />
+        <Route path="/eventList" element={<EventList />} />
+        <Route path="/eventForm" element={<EventForm />} />
+        <Route path="/volunteerForm" element={<VolunteerForm />} />
       </Routes>
     </Router>
   );

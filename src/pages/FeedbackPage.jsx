@@ -5,8 +5,10 @@ import FeedbackForm from '../components/FeedbackForm';
 function FeedbackPage() {
   return (
     <div>
-      <h1>Обратная связь</h1>
+      <div className="container">
+      <h1 className='q'>Обратная связь</h1>
       <FeedbackForm />
+      </div>
     </div>
   );
 }

@@ -12,6 +12,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
       <Link className="navbar-brand" to="/">Kind Hands</Link>
       
       <button 
@@ -27,11 +28,9 @@ function Navbar() {
       
       <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
         <ul className="navbar-nav mr-auto">
+          
           <li className="nav-item">
-            <Link className="nav-link" to="/organization">Регистрация как организация</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/volunteer">Регистрация как волонтер</Link>
+            <Link className="nav-link" to="/eventList">Список мероприятий</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/feedback">Обратная связь</Link>
@@ -43,6 +42,7 @@ function Navbar() {
             <Link className="nav-link" to="/login">Вход</Link>
           </li>
         </ul>
+      </div>
       </div>
     </nav>
   );

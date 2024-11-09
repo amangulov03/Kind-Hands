@@ -1,11 +1,21 @@
-src/styles.css
-body {
-    font-family: 'Arial', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ body {
+   
+    font-family: "Kanit", sans-serif;
     background-color: #f8f9fa;
     padding: 20px;
-  }
-  
-  header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(./img/Designer\ \(1\).jpeg.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
     text-align: center;
     margin-bottom: 30px;
     background-color: #007bff;
@@ -13,23 +23,23 @@ body {
     padding: 10px 0;
     border-radius: 8px;
     animation: fadeInDown 1s;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 2rem;
-  }
-  
-  #search-input {
+}
+
+#search-input {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     display: block;
-  }
+}
 
-  nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -39,13 +49,13 @@ nav a {
     font-weight: bold;
     transition: color 0.3s;
     text-align: center;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #ffc107;
-  }
-  
-  main {
+}
+
+main {
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -53,165 +63,161 @@ nav a {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
+}
+
+form {
+    display: grid;
+    place-items: center;
+}
+
+form.mb-3:hover {
+    border: #0056b3 2px solid;
+}
+
+form label {
     margin: 10px 0 5px;
     font-weight: bold;
-  }
-  
-  form input,
-  form select,
-  form textarea,
-  form button {
+}
+
+form input,
+form select,
+form textarea,
+form button {
     padding: 10px;
     margin-bottom: 15px;
-    border-radius: 5px;
     border: 1px solid #ccc;
     transition: border-color 0.3s;
-  }
-  
-  form input:focus,
-  form select:focus,
-  form textarea:focus {
+    border-radius: 30px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
     border-color: #007bff;
     outline: none;
-  }
-  
-  form button {
+}
+
+form button {
     background-color: #007bff;
     color: white;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .event-card {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s;
-
-
 }
 
-.event-card .block  {
+form button:hover {
+    background-color: #0056b3;
+}
+
+.event-card {
+    
+    animation: fadeIn 1s;
+}
+
+.event-card .block {
     display: flex;
     align-items: center;
     gap: 20px;
+}
 
-  }
-
-  .event-card .block button {
+.event-card .block button {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
     transition: color 0.3s;
     margin-left: 10px;
-  }
+}
 
-  .event-card .block button:hover {
+.event-card .block button:hover {
     color: #ffc107;
-  }
-  
-  .event-card h3 {
+}
+
+.event-card h3 {
     margin-bottom: 10px;
-  }
-  
-  .event-card a {
+}
+
+.event-card a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
     transition: color 0.3s;
     margin-left: 10px;
-  }
-  
-  .event-card a:hover {
+}
+
+.event-card a:hover {
     color: #ffc107;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
 
-
-  
-  #volunteer-list ul {
+#volunteer-list ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  #volunteer-list li {
+}
+
+#volunteer-list li {
     padding: 5px 0;
     animation: fadeIn 1s;
-  }
-  
-  #search-input {
+}
+
+#search-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     transition: border-color 0.3s;
-  }
-  
-  #search-input:focus {
+}
+
+#search-input:focus {
     border-color: #007bff;
     outline: none;
-  }
-  
-  #user-profile {
+}
+
+#user-profile {
     background-color: #f9f9f9;
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s;
-  }
-  
-  #user-profile h2 {
+}
+
+#user-profile h2 {
     margin-bottom: 10px;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes fadeInDown {
+}
+
+@keyframes fadeInDown {
     from {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-
-  
-
-
- 
+}

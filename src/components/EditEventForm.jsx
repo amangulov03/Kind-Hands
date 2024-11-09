@@ -38,7 +38,8 @@ function EditEventForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="container">
+        <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="event-name" className="form-label">Название мероприятия</label>
         <input type="text" id="event-name" name="name" className="form-control" value={event.name} onChange={handleChange} required />
@@ -57,6 +58,7 @@ function EditEventForm() {
       </div>
       <button type="submit" className="btn btn-primary">Сохранить изменения</button>
     </form>
+    </div>
   );
 }
 

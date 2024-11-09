@@ -5,8 +5,10 @@ import VolunteerForm from '../components/VolunteerForm';
 function VolunteerPage() {
   return (
     <div>
-      <h1>Регистрация как волонтер</h1>
+      <div className="container">
+      <h1 className='q'>Регистрация как волонтер</h1>
       <VolunteerForm />
+      </div>
     </div>
   );
 }

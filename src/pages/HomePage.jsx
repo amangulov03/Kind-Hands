@@ -1,12 +1,14 @@
 // src/pages/HomePage.js
 import React from 'react';
-import EventList from '../components/EventList';
+import Section from "../components/Section"
 
 function HomePage() {
   return (
     <div>
-      <h1>Список мероприятий</h1>
-      <EventList />
+      <div className="container">
+
+      <Section />
+      </div>
     </div>
   );
 }
