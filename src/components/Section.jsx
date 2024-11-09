@@ -7,7 +7,7 @@ function Section() {
     return (
         <div className="container">
             <div className="backf">
-            <h1>Платформа для волонтеров</h1>
+            <h1>Платформа для волонтеров  <span>"Kind Hands"</span></h1>
             </div>
             <div className="backf">
             
