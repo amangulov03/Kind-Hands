@@ -42,7 +42,7 @@ function EventList() {
                             Удалить
                         </button>
                         <a href={`/volunteer?id=${event.id}`}>Записаться</a>
-                        <a href={`/volunteers-list?id=${event.id}`}>
+                        <a href={`/volunteerList?id=${event.id}`}>
                             Посмотреть волонтеров
                         </a>
                     </div>

@@ -13,6 +13,7 @@ import EditEventForm from './components/EditEventForm';
 import EventList from "./components/EventList";
 import EventForm from './components/EventForm.jsx';
 import VolunteerForm from './components/VolunteerForm.jsx';
+import VolunteerList from './components/VolunteerList.jsx';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/eventList" element={<EventList />} />
         <Route path="/eventForm" element={<EventForm />} />
         <Route path="/volunteerForm" element={<VolunteerForm />} />
+        <Route path="/volunteerList" element={<VolunteerList />} />
       </Routes>
     </Router>
   );

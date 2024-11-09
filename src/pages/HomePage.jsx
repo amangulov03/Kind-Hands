@@ -6,7 +6,6 @@ function HomePage() {
   return (
     <div>
       <div className="container">
-
       <Section />
       </div>
     </div>
