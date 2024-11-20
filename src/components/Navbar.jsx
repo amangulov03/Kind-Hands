@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/afs.css";
@@ -7,13 +6,17 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen((prevState) => !prevState); // Переключаем состояние
+        setIsMenuOpen((prevState) => !prevState);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" to="/" onClick={closeMenu}>
                     Kind Hands
                 </Link>
 
@@ -22,7 +25,7 @@ function Navbar() {
                     type="button"
                     onClick={toggleMenu}
                     aria-controls="navbarNav"
-                    aria-expanded={isMenuOpen ? "true" : "false"} // обновляем атрибут aria-expanded
+                    aria-expanded={isMenuOpen ? "true" : "false"}
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon"></span>
@@ -36,22 +39,22 @@ function Navbar() {
                 >
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/eventList">
+                            <Link className="nav-link" to="/eventList" onClick={closeMenu}>
                                 Список мероприятий
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/feedback">
+                            <Link className="nav-link" to="/feedback" onClick={closeMenu}>
                                 Обратная связь
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/profile">
+                            <Link className="nav-link" to="/profile" onClick={closeMenu}>
                                 Профиль
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/login">
+                            <Link className="nav-link" to="/login" onClick={closeMenu}>
                                 Вход
                             </Link>
                         </li>
@@ -61,6 +64,5 @@ function Navbar() {
         </nav>
     );
 }
-
 
 export default Navbar;

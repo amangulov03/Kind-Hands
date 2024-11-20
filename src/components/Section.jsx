@@ -20,8 +20,8 @@ function Section() {
                 реальном времени.
             </p>
             <div className="bbtn">
-            <button><Link to="eventForm">Регистрация как организация</Link></button>
-            <button><Link to="volunteerForm">Регистрация как волонтер</Link></button>
+            <button><Link to="organization">Регистрация как организация</Link></button>
+            <button><Link to="volunteer">Регистрация как волонтер</Link></button>
             </div>
             </div>
         </div>
